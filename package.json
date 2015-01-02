@@ -1,0 +1,39 @@
+{
+  "name": "train-route",
+  "description": "connect point a to point b with x number of cars",
+  "homepage": "https://github.com/daxxog/train-route",
+  "main": "train-route.min.js",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=0.10.33"
+  },
+  "maintainers": [
+    {
+      "name": "David Volm",
+      "email": "david@volminator.com",
+      "web": "http://daxxog.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daxxog/train-route.git"
+  },
+  "devDependencies": {
+    "bitfactory": "*",
+    "stoptime": "*",
+    "uglify-js": "*",
+    "vows": "*",
+    "train-destination": "*"
+  },
+  "scripts": {
+    "build": "node make.js",
+    "test": "vows test/*",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "train-route.min.js"
+  ],
+  "dependencies": {
+    "mongodb": "*"
+  }
+}
